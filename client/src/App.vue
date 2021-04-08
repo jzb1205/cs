@@ -3,6 +3,10 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <form action="">
+        <input type="text">
+        <button type="submit">搜索</button>
+      </form>
     </div>
     <router-view />
   </div>
@@ -27,6 +31,19 @@
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+}
+form{
+  display: flex;
+  input,button{
+    outline: none;
+    align-items: center;
+  }
+  input{
+    flex-grow: 1;
+  }
+  button{
+    height:70px;
   }
 }
 </style>

@@ -27,7 +27,7 @@ module.exports = {
     proxy: {
       "/api": {
         // 目标代理服务器地址
-        target: "http://127.0.0.1:3000/",
+        target: "http://192.168.1.34:3000/",
         // 开启代理，本地创建一个虚拟服务器 允许跨域
         changeOrigin: true,
         pathRewrite: {
